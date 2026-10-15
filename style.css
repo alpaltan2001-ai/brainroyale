@@ -1,0 +1,181 @@
+/* Brain Royale website: the app's colors and fonts (design doc 9.3). */
+:root {
+  --sky: #ddf1fb;
+  --accent: #d6336c;
+  --ink: #1b2a4a;
+  --ink-2: #4a5a78;
+  --card: #ffffff;
+  --memory: #6b4fd8;
+  --focus: #f07a1a;
+  --logic: #2a7fc1;
+  --speed: #e5484d;
+  --numerical: #1fa06a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--sky);
+  color: var(--ink);
+  font-family: 'Nunito', -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 16px 48px;
+}
+
+a {
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+}
+
+.brand img {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+}
+
+.wordmark {
+  font-family: 'Modak', 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1;
+  color: var(--accent);
+  letter-spacing: 0.5px;
+}
+
+.hero {
+  text-align: center;
+  padding: 24px 0 8px;
+}
+
+.hero img {
+  width: 120px;
+  height: 120px;
+  border-radius: 30px;
+  box-shadow: 0 6px 0 rgba(27, 42, 74, 0.08);
+}
+
+.hero .wordmark {
+  display: block;
+  margin-top: 16px;
+  font-size: clamp(48px, 13vw, 76px);
+}
+
+.tagline {
+  margin: 8px 0 0;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.soon {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--ink-2);
+  font-weight: 800;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 14px;
+  margin-top: 32px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 24px;
+  background: var(--card);
+  box-shadow: 0 6px 0 rgba(27, 42, 74, 0.06);
+}
+
+.card h2 {
+  margin: 0 0 6px;
+  font-size: 19px;
+  font-weight: 900;
+}
+
+.card p {
+  margin: 0;
+  color: var(--ink-2);
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.categories span {
+  padding: 3px 10px;
+  border-radius: 999px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.doc {
+  margin-top: 24px;
+  padding: 24px;
+  border-radius: 24px;
+  background: var(--card);
+}
+
+.doc h1 {
+  margin: 0 0 4px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.doc h2 {
+  margin: 28px 0 6px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.doc .updated {
+  margin: 0;
+  color: var(--ink-2);
+}
+
+.doc ul {
+  padding-left: 22px;
+}
+
+.doc li {
+  margin: 4px 0;
+}
+
+footer {
+  margin-top: 36px;
+  text-align: center;
+  color: var(--ink-2);
+  font-size: 15px;
+}
+
+footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 8px;
+}
